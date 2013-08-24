@@ -7,6 +7,7 @@
 	{{HTML::style('assets/css/sticky-footer-navbar.css');}}
 	{{HTML::script('assets/js/jquery-1.10.2.min.js');}}
 	{{HTML::script('assets/js/bootstrap.min.js');}}
+	{{HTML::script('assets/js/hmdv1.js');}}
 
 
 </head>
