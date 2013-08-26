@@ -3,6 +3,17 @@
         	{{HTML::script('assets/js/userauth.js');}}
         @stop	
         @section('content')
+                @if (isset($message))
+                <div class="row">
+                        <div class="offset2 span3">
+                                <div class="alert alert-error alert-block" >
+                                <button class="close " data-dismiss="alert">&times;</button>
+                                <strong>{{$message}}</strong>
+                                
+                        </div>
+                        </div>
+                </div>
+                @endif
         {{ Form::open(array('url' => 'subscribe')) }}
                 <div class="row">
                         <div class="span12">
@@ -30,7 +41,7 @@
                 <div class="row">
                         <div class="span2 text-right">confirm  password</div>
                         <div class="span10">
-                                <input type="password" name='' id='confirm_new_password'>
+                                <input class="span3" type="password" name='' id='confirm_new_password'>
                         </div>
                 </div>
                 <div class="row">

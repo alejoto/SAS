@@ -14,6 +14,7 @@
 
 </head>
     <body>
+    	
     	<div id="wrap">
     		@include('templates.navbar')
 	    		
