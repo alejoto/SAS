@@ -6,7 +6,7 @@
         {{ Form::open(array('url' => 'subscribe')) }}
                 <div class="row">
                         <div class="span12">
-                                Subscribe
+                                <h1>Subscribe</h1>
                         </div>
                 </div>
                 <div class="row">
@@ -36,6 +36,13 @@
                 <div class="row">
                         <div class="offset2 span10">
                                 <input type='submit' id='subscribe' value='subscribe' class='btn'/>
+                        </div>
+                </div>
+                <hr>
+                <div class="row">
+                        <div class="offset2 span10">
+                                Already a member? go to
+                                <a href="{{ url('/')}}">login</a> site
                         </div>
                 </div>
         {{ Form::close() }}

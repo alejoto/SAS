@@ -3,10 +3,10 @@
 @section('sidebar')
 @stop
 @section('content')
-	Succesfully logged in
+	Succesfully logged out
 	<br>
-	<a href="{{ url('logout')}}">Log out</a>
-
+	<a href="{{ url('/')}}">Log in</a>
 @stop
+
 
 

@@ -66,7 +66,7 @@ function valid_email(input,message) {
 			&&$('#'+input).val()!='')
 		{
 			$('#'+input).focus();
-			$("#"+message).html("Ingrese email v&aacute;lido");
+			$("#"+message).html("Please enter valid email");
 			
 		}
 		else

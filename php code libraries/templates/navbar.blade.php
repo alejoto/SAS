@@ -6,12 +6,23 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="brand" href="#">Project name</a>
+			{{link_to('/','Auth template v1',$attributes = array('class'=>'brand'))}}
 			<div class="nav-collapse collapse">
 				<ul class="nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li  class="active">
+						{{link_to('subscribe','never dissapears')}}
+					</li>
+					{{--unchecked users--}}
+					@if (!Auth::check())
+					    <li>
+					    	<a href="#about">Dissapears when logged on</a>
+					    </li>
+						<li>
+							{{link_to('subscribe','subscribe')}}
+						</li>
+					@endif
+					
+					
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 						<ul class="dropdown-menu">
@@ -24,6 +35,20 @@
 							<li><a href="#">One more separated link</a></li>
 						</ul>
 					</li>
+					@if (Auth::check())
+					<li>
+						<a href="#contact">Button for logged user only1</a>
+					</li>
+					<li>
+						<a href="#contact">Button for logged user only2</a>
+					</li>
+					<li>
+						{{link_to('logout','Log off')}}
+					</li>
+						
+
+					@endif
+					
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
