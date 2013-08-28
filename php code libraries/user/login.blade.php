@@ -22,7 +22,7 @@
 		</div>
 	</div>
 
-	{{ Form::open(array('url' => 'login')) }}
+	{{ Form::open(array('url' => 'user/verify')) }}
 		<div class="row">
 			<div class="span2 text-right">Your email</div>
 			<div class="span3">
@@ -59,7 +59,7 @@
 	</div>
 	<div class="row reset_hide">
 		<div class="offset2 span10">
-			First time here? <a href="{{ url('subscribe')}}">Subscribe. </a>
+			First time here? <a href="{{ url('user/subscribe')}}">Subscribe. </a>
 			<br>
 			Forgot password? Not to be worried.
 			<a href="subscribe" id='reset_request'>Reset your password</a>.

@@ -16,7 +16,7 @@
 	
 	<br>
 
-	<a href="{{ url('logout')}}">Log out</a>
+	<a href="{{ url('logged/logout')}}">Log out</a>
 
 @stop
 

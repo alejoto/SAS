@@ -13,7 +13,7 @@
 @if(isset($_GET['key']))
 
 
-{{ Form::open(array('url' => 'changepassword')) }}
+{{ Form::open(array('url' => 'user/changepwd')) }}
     <div class="row">
             <div class="span2 text-right">Confirm your email</div>
             <div class="span3">

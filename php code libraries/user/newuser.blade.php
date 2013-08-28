@@ -14,7 +14,7 @@
                         </div>
                 </div>
                 @endif
-        {{ Form::open(array('url' => 'subscribe')) }}
+        {{ Form::open(array('url' => 'user/subscription')) }}
                 <div class="row">
                         <div class="span12">
                                 <h1>Subscribe</h1>

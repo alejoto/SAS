@@ -23,7 +23,7 @@ $(function(){
 
 	$('#send_reset').click(function(){
 		var email=$('#email').val();
-		$.post('reset',{email:email},function(data){
+		$.post('user/reset',{email:email},function(data){
 			if (data=='noexist') {
 				
 				$('#ajax_result').html('It seems that '
