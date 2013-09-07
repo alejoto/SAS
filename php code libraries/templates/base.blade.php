@@ -14,7 +14,7 @@
 
 </head>
     <body>
-    	
+    	<div class='hide'  id='base'>{{URL::to('/')}}</div>
     	<div id="wrap">
     		@include('templates.navbar')
 	    		
